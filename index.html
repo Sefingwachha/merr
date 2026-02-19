@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sefin Portfolio - Creative Developer & Designer based in Tokyo"
+    />
+    <meta name="theme-color" content="#3b82f6" />
+    <title>SEFIN</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Prevent Flash of Unstyled Content -->
+    <script>
+      const theme = localStorage.getItem("theme") || "light";
+      document.documentElement.classList.add(theme);
+    </script>
+  </head>
+  <body class="font-display overflow-x-hidden">
+    <!-- Theme Toggle Button -->
+    <button
+      id="theme-toggle"
+      class="theme-toggle-btn"
+      aria-label="Toggle theme"
+    >
+      <span class="material-icons theme-icon-sun">light_mode</span>
+      <span class="material-icons theme-icon-moon hidden">dark_mode</span>
+    </button>
+
+    <!-- Floating Navigation -->
+    <nav class="floating-nav">
+      <a class="nav-link" href="#home" data-section="home">HOME</a>
+      <a class="nav-link" href="#about" data-section="about">ABOUT</a>
+      <div class="nav-dot"></div>
+      <a class="nav-link" href="#works" data-section="works">WORKS</a>
+      <a class="nav-link" href="#contact" data-section="contact">CONTACT</a>
+    </nav>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+      <div id="scroll-progress" class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-left">
+        <div class="hero-header fade-in-up" style="animation-delay: 0.1s">
+          <span class="portfolio-badge">Design</span>
+          <span class="hire-badge pulse-badge">AVAILABLE</span>
+        </div>
+
+        <div class="hero-title-container">
+          <h1 class="hero-title">SEFIN</h1>
+          <div
+            class="hero-description fade-in-right"
+            style="animation-delay: 0.5s"
+          >
+            <p>
+              Creative Developer & <br />Designer based in
+              <span class="location-highlight">Bhaktapur</span>.
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-footer fade-in-up" style="animation-delay: 0.3s">
+          <p class="scroll-text">Scroll to Explore</p>
+          <div class="progress-line">
+            <div class="progress-bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right hero-bg">
+        <div class="gradient-overlay"></div>
+
+        <!-- Animated blobs -->
+        <div class="blobs-container">
+          <div class="blob blob-1"></div>
+          <div class="blob blob-2"></div>
+          <div class="blob blob-3"></div>
+        </div>
+
+        <!-- Floating particles -->
+        <div class="particles-container">
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+          <div class="particle"></div>
+        </div>
+
+        <div class="hero-text-overlay hero-text">
+          <h2 class="digital-text glitch-text">DIGITAL</h2>
+          <h2 class="alchemy-text glitch-text" style="animation-delay: 0.2s">
+            ALCHEMY
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-label fade-in-left">
+            <span class="section-badge">01 / About</span>
+          </div>
+
+          <div class="about-content">
+            <h3 class="about-heading reveal-text">
+              I craft
+              <span class="highlight-text text-glow">digital experiences</span>
+              that exist at the intersection of performant code and immersive
+              design.
+            </h3>
+
+            <div class="about-paragraphs">
+              <p
+                class="about-paragraph fade-in-up"
+                style="animation-delay: 0.2s"
+              >
+                Traditional websites are static. I believe the web should
+                breathe. My work focuses on bringing kinetic energy to user
+                interfaces, transforming passive viewing into active
+                exploration.
+              </p>
+              <p
+                class="about-paragraph fade-in-up"
+                style="animation-delay: 0.4s"
+              >
+                With a background in both graphic design and full-stack
+                engineering, I don't just hand off designs—I build them. Every
+                pixel is calculated, every animation is optimized for 60fps.
+              </p>
+            </div>
+
+            <div
+              class="skills-container fade-in-up"
+              style="animation-delay: 0.6s"
+            >
+              <div class="skill-badge">
+                <span class="material-icons">terminal</span>
+                <span>Code</span>
+              </div>
+              <div class="skill-badge">
+                <span class="material-icons">brush</span>
+                <span>Design</span>
+              </div>
+              <div class="skill-badge">
+                <span class="material-icons">animation</span>
+                <span>Motion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works Section -->
+    <section class="works-section" id="works">
+      <div class="container">
+        <div class="works-header">
+          <div class="fade-in-left">
+            <span class="section-label">02 / Selected Works</span>
+            <h2 class="works-title">Featured Projects</h2>
+          </div>
+          <a class="see-all-link fade-in-right" href="#contact">
+            See all projects
+            <span class="material-icons">arrow_forward</span>
+          </a>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card project-large" data-delay="0">
+            <div class="project-image">
+              <div class="project-gradient"></div>
+              <img
+                alt="Clean editorial fashion layout"
+                src="Main Frame.jpg"
+              />
+            </div>
+            <div class="project-content">
+              <div class="project-info">
+                <div class="project-tags">
+                  <span class="tag-primary">E-Commerce</span>
+                  <span class="tag-secondary">2024</span>
+                </div>
+                <h3 class="project-title">Euphoria Fashion</h3>
+                <p class="project-description">
+                  A highly immersive shopping experience featuring WebGL cloth
+                  simulation and seamless page transitions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card project-tall" data-delay="0.1">
+            <div class="project-image">
+              <div class="project-gradient"></div>
+              <img
+                alt="Abstract data visualization dashboard"
+                src="hero banner.jpg"
+              />
+            </div>
+            <div class="project-content">
+              <div class="project-info">
+                <div class="project-tags">
+                  <span class="tag-primary">Photography</span>
+                </div>
+                <h3 class="project-title-sm">Cherished</h3>
+                <p class="project-description">
+                  Photography is not about cameras. It’s about memory.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card project-small" data-delay="0.2">
+            <div class="project-image">
+              <div class="project-gradient"></div>
+              <img
+                alt="Colorful fluid gradient generative art"
+                src="Hero Banner UI.jpg"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title-xs">Ultimate</h3>
+              <p class="project-subtitle">Generative Art / Canvas API</p>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card project-wide" data-delay="0.3">
+            <a href="https://www.expertservicehub.com/">
+              <div class="project-image">
+              <div class="project-gradient"></div>
+              <img
+                alt="Clean minimalist furniture website"
+                src="site.png"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title-xs"> Expert Service Hub</h3>
+              <p class="project-subtitle">React</p>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <!-- <section class="tech-section">
+        <div class="container">
+            <span class="section-label fade-in-up">03 / Capabilities</span>
+            <h2 class="tech-title fade-in-up" style="animation-delay: 0.1s">Tech Stack</h2>
+            
+            <div class="orbit-container orbit-system">
+                <div class="orbit-core core-pulse">
+                    <div class="core-content">
+                        <span class="core-icon">⚡</span>
+                        <span class="core-text">CORE</span>
+                    </div>
+                </div>
+                
+                <div class="orbit-ring orbit-inner"></div>
+                
+                <div class="orbit-ring orbit-outer"></div>
+            </div>
+            
+            <div class="tech-tags">
+                <span class="skill-tag" style="animation-delay: 0s">Tailwind CSS</span>
+                <span class="skill-tag" style="animation-delay: 0.1s">Next.js</span>
+                <span class="skill-tag" style="animation-delay: 0.2s">UI/UX</span>
+                <span class="skill-tag" style="animation-delay: 0.5s">GSAP</span>
+            </div>
+        </div>
+    </section> -->
+
+   <section class="tech-section" id="capabilities">
+  <div class="container">
+    
+    <span class="section-label fade-in-up">03 / Capabilities</span>
+    <h2 class="tech-title fade-in-up" style="animation-delay: 0.1s">Tech Stack</h2>
+
+    <!-- NEW: Spotlight Grid -->
+    <div class="spotlight-grid">
+      
+      <!-- Tech Card 1 -->
+      <div class="tech-card">
+        <div class="card-content">
+          <span class="tech-icon">🎨</span>
+          <h3>Tailwind CSS</h3>
+          <p>Rapid UI Development</p>
+        </div>
+      </div>
+
+      <!-- Tech Card 2 -->
+      <div class="tech-card">
+        <div class="card-content">
+          <span class="tech-icon">✨</span>
+          <h3>GSAP</h3>
+          <p>High-Performance Anim</p>
+        </div>
+      </div>
+
+      <!-- Tech Card 3 -->
+      <div class="tech-card">
+        <div class="card-content">
+          <span class="tech-icon">⚛️</span>
+          <h3>React / Next.js</h3>
+          <p>Component Architecture</p>
+        </div>
+      </div>
+
+      <!-- Tech Card 4 -->
+      <div class="tech-card">
+        <div class="card-content">
+          <span class="tech-icon">🧊</span>
+          <h3>Three.js</h3>
+          <p>3D Web Experiences</p>
+        </div>
+      </div>
+
+      <!-- Tech Card 5 -->
+      <div class="tech-card">
+        <div class="card-content">
+          <span class="tech-icon">⚡</span>
+          <h3>UI/UX</h3>
+          <p>Design</p>
+        </div>
+      </div>
+
+      <!-- Tech Card 6 -->
+      <div class="tech-card">
+        <div class="card-content">
+          <span class="tech-icon">📱</span>
+          <h3>Responsive</h3>
+          <p>Mobile First Design</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="grid-pattern"></div>
+
+      <div class="contact-container">
+        <p class="contact-intro fade-in-up">Got an idea?</p>
+
+        <a class="contact-cta" href="mailto:sefingwachha@gmail.com">
+          <h2 class="cta-text">LET'S BUILD</h2>
+          <div class="cta-underline"></div>
+        </a>
+
+        <div class="footer-grid footer-content">
+          <div class="footer-column fade-in-up" style="animation-delay: 0.1s">
+            <h4 class="footer-heading">Contact</h4>
+            <ul class="footer-list">
+              <li>
+                <a class="footer-link" href="mailto:sefingwachha@gmail.com"
+                  >sefingwachha@gmail.com</a
+                >
+              </li>
+              <li class="footer-text">Bhaktapur, Nepal</li>
+            </ul>
+          </div>
+
+          <div class="footer-column fade-in-up" style="animation-delay: 0.2s">
+            <h4 class="footer-heading">Socials</h4>
+            <ul class="footer-list">
+              <!-- <li><a class="footer-link social-link" href="#" aria-label="Twitter">Twitter / X</a></li> -->
+              <li>
+                <a
+                  class="footer-link social-link"
+                  href="https://www.linkedin.com/in/sefin-gwachha/"
+                  aria-label="LinkedIn"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer-link social-link"
+                  href="https://www.instagram.com/___sefin?igsh=aW4xdXIyY2FzanYz"
+                  aria-label="Instagram"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer-link social-link"
+                  href="https://github.com/Sefingwachha"
+                  aria-label="GitHub"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="footer-column newsletter-column fade-in-up"
+            style="animation-delay: 0.3s"
+          >
+            <h4 class="footer-heading">Newsletter</h4>
+            <form class="newsletter-form" id="newsletter-form">
+              <input
+                class="newsletter-input"
+                placeholder="Email Address"
+                type="email"
+                aria-label="Email address"
+                required
+              />
+              <button class="newsletter-button" type="submit">Join</button>
+            </form>
+            <p class="footer-copyright">© 2026 Sefin. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
